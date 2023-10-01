@@ -1,0 +1,21 @@
+/* Style the list items */
+.my-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-list li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  flex: 1;
+}
+
+/* Apply different styles to the first list item */
+.block-item {
+  flex-basis: 100%;
+  flex-grow: 1;
+}

@@ -1,6 +1,7 @@
 /* BEST PRACTICE from here */
 html {
   box-sizing: border-box;
+  text-align: center;
 }
 
 *, *:before, *:after {
@@ -15,23 +16,19 @@ main {
   min-height: 100vh;
   border: 3px solid red;
 }
-
 main > * {
   flex-basis: 25rem;
   flex-grow: 1;
 }
-
 ul {
   display:flex;
   flex-wrap: wrap;
 }
-
 li {
   min-width: 250px;
   flex: 1;
   text-align: center;
 }
-
 li:nth-child(even) {
   background-color: red;
 }
@@ -39,7 +36,6 @@ li:nth-child(odd) {
   background-color: greenyellow;
   border: 3px solid blue;
 }
-
 @media (min-width:1025px) {
   section {
     order: 3;
