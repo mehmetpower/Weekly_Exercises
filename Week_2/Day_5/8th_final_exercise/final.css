@@ -1,0 +1,54 @@
+/* BEST PRACTICE from here */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* BEST PRACTICE to here */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 3px solid red;
+}
+
+main > * {
+  flex-basis: 25rem;
+  flex-grow: 1;
+}
+
+ul {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+li {
+  min-width: 250px;
+  flex: 1;
+  text-align: center;
+}
+
+li:nth-child(even) {
+  background-color: red;
+}
+li:nth-child(odd) {
+  background-color: greenyellow;
+  border: 3px solid blue;
+}
+
+@media (min-width:1025px) {
+  section {
+    order: 3;
+  }
+  li:nth-child(3) {
+    order: 2;
+  }
+  li:nth-child(1) {
+    order: 4;
+  }
+}
+

@@ -1,0 +1,44 @@
+main {
+  display: flex;
+}
+
+.item {
+  width: 99%;
+  height: 200px;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  background-color: blue;
+  width: 33%;
+  height: 200px;
+}
+
+.item2 {
+  background-color: cyan;
+  width: 33%;
+  height: 200px;
+}
+
+.item3 {
+  background-color: red;
+  width: 33%;
+  height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  div#item {
+    order: 0
+  }
+  div#item1 {
+    order: 3
+  }
+  div#item2 {
+    order: 4
+  }
+  div#item3 {
+    order: 1
+  }
+}

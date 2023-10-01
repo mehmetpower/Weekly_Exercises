@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('fonts/fontawesome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  font-family: 'FontAwesome'; /* Set the font family you defined earlier */
+  font-size: 48px; /* Adjust the icon size */
+  color: #d42424; /* Change the icon color */
+}
+
+.fa-helicopter {
+  font-family: 'FontAwesome'; /* Set the font family you defined earlier */
+  font-size: 48px; /* Adjust the icon size */
+  color: #2d24d4; /* Change the icon color */
+}
+
+
+[data-icon]:before {
+  font-family: icons; /* BYO icon font, mapped smartly */
+  content: attr(data-icon);
+  speak-as: none; /* Not to be trusted, but hey. */
+}
+
+/* Same CSS as above, plus */
+
+.icon-alone {
+  display: inline-block; /* Chrome 19 was weird with clickability without this */
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

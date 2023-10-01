@@ -1,0 +1,27 @@
+/* BEST PRACTICE from here */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* BEST PRACTICE to here */
+
+header {
+  margin-bottom: 25px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+p {
+  display: inline-block; /* with inline-block must declare width */
+  width: 10rem;
+  vertical-align:top; /* with inline-block must declare vertical-align property */
+}
+
+footer p {
+  display: none;
+}

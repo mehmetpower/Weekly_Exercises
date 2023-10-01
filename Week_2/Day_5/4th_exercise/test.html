@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sector Reordering</title>
+    <style>
+        /* Default order for PC screens */
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sector {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Reorder for screens <= 768px */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            /* Specify the order for smaller screens */
+            .sector:nth-child(1) { order: 3; } /* S1 becomes third */
+            .sector:nth-child(2) { order: 2; } /* S2 becomes second */
+            .sector:nth-child(3) { order: 1; } /* S3 becomes first */
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <h1>HEADER</h1>
+    </div>
+    <div class="container">
+        <div class="sector" id="feature" style="background-color: #FF5733";>
+          <ul>
+            <li>FEATURE-1----Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati numquam totam magni et dolorum animi ipsa nemo deleniti aspernatur minima laudantium hic, ab eos ad veniam, repudiandae sint! Odio, odit!</li>
+            <li>FEATURE-2----Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati numquam totam magni et dolorum animi ipsa nemo deleniti aspernatur minima laudantium hic, ab eos ad veniam, repudiandae sint! Odio, odit!</li>
+            <li>FEATURE-3----Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati numquam totam magni et dolorum animi ipsa nemo deleniti aspernatur minima laudantium hic, ab eos ad veniam, repudiandae sint! Odio, odit!</li>
+          </ul>
+        </div>
+        <div class="sector" id="signup" style="background-color: #33FF57;">SIGN UP</div>
+        <div class="sector" style="background-color: #5733FF;">CONTENT</div>
+    </div>
+</body>
+</html>

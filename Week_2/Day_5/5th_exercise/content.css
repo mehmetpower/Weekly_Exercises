@@ -1,0 +1,37 @@
+
+/* BEST PRACTICE from here */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* BEST PRACTICE to here */
+
+body {
+  /* Typical body flex rule for sticky footer. It addresses the MAIN element */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+header {
+  margin: 20px 0 20px 0;
+}
+
+main {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  width: 80%;
+  /* The most important part starts from here */
+  flex-grow: 1 ;
+  flex-shrink: 0;
+  flex-basis: auto;
+  /* to here */
+}
+
+footer {
+  margin: 20px 0 20px 0;
+}
