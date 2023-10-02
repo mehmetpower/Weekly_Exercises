@@ -1,0 +1,61 @@
+/* BEST PRACTICE from here */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 10px 0;
+}
+/* BEST PRACTICE to here */
+
+h1::before {
+  content: "test";
+  color: wheat;
+  display: block;
+  width:  50px;
+  height: 20px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-content: baseline;
+}
+legend {
+  font-weight: bold;
+}
+
+div {
+  display: flex;
+}
+
+label {
+  width: 10rem;
+}
+
+label[for="subscribe"] {
+  width: auto;
+  align-items: center;
+}
+
+input and not[type="checkbox"], textarea, select {
+  width: 25rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="text"] {
+  width: 25rem;
+}
+
+[href$=".pdf"]::after {
+  content: " (.pdf)"
+}
+
+[target="_blank"]::after {
+  content: " (opens in new window)";
+}

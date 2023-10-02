@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Sample form</h1>
+  <form action="index.html" method="POST">
+    <fieldset>
+      <legend>Shipping address</legend>
+      <div>
+        <label for="name">First & last name:</label>
+        <input type="text" id="name" name="name" placeholder="Like Mehmet.." />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea name="comments" id="message" placeholder="Message here" rows="3"></textarea>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+          <option selected>Select one..</option>
+          <option value="CH">Switzerland</option>
+          <option value="DE">Germany</option>
+          <option value="AU">Austria</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" value="subscribe" name="subscribe" id="subscribe" >
+        <label for="subscribe">Add me to your email list</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Payment Method</legend>
+      <div>
+        <input type="radio" id="cc" name="payment_method" value="Credit Card" checked>
+        <label for="cc">Credit Card</label>
+      </div>
+      <div>
+        <input type="radio" id="twint" name="payment_method" value="twint">
+        <label for="twint">Twint</label>
+      </div>
+    </fieldset>
+  </form>
+  <a href="test.pdf" target="_blank">Test</a>
+</body>
+</html>
