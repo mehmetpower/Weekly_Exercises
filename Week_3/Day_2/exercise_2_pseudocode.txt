@@ -1,0 +1,14 @@
+DECLARE result variable;
+ASSIGN value of result to 0;
+WHILE
+    ask a user to make a valid input;
+    
+    IF(input is exit)
+        BREAK;
+    
+    IF(input is number)
+        ADD input to result;
+    
+    ELSE
+        ask user to input a valid number;
+PRINT result;
