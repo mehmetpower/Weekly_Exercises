@@ -1,0 +1,52 @@
+/* BEST PRACTICE from here */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+/* BEST PRACTICE to here */
+
+section {
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+li {
+  list-style-type: none;
+}
+
+article {
+  margin: 2px 10px 2px 10px;
+  max-width: 100%; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin: 25px 25px;
+  text-align: center;
+  color: red;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  text-align: center;
+  max-width: 473px;
+  height: auto;
+}
