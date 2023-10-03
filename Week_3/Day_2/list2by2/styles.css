@@ -18,35 +18,45 @@ section {
 ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content:center;
+  margin: 0;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
+  flex: 1;
 }
 
 article {
-  margin: 2px 10px 2px 10px;
+  margin: 2px 10px;
   max-width: 100%; 
   box-sizing: border-box; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 h3 {
-  margin: 25px 25px;
   text-align: center;
   color: red;
 }
 
 article img {
-  max-width: 100%;
+  max-width: fit-content;
   height: auto;
 }
 
 p {
   text-align: center;
-  max-width: 473px;
+  max-width: fit-content;
   height: auto;
+}
+
+@media (max-width: 600px){
+  li {
+    flex-basis: 100%;
+  }
 }
