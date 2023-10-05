@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+ol, ul {
+  display: flex;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s;
+  scroll-snap-align: start;
+}
+
+ul li {
+  background-color: rgb(68, 71, 114);
+  flex: 1 0 100%;
+  font-size: 10rem;
+  
+}
+
+ul li:nth-child(even) {
+  background-color: rgb(26, 117, 23);
+}
