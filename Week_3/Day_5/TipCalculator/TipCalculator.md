@@ -31,23 +31,23 @@
   - BillAmount = CHF 0.05
   - BillAmount = 0
 
-# TIP CALCULATOR
+# TIP CALCULATOR PSEUDO CODE
 
-Input: BillAmount
-Check if BillAmount is a number and positive
-True: Continue
-False: Input: BillAmount
+- `Input: BillAmount`
+- Check if BillAmount is a number and positive
+- `True: Continue`
+- `False: Input: BillAmount`
 
-Input: TipRate
-Check if TipRate is an integer and positive
-True: Continue
-False: Input: TipRate
+- `Input: TipRate`
+- Check if TipRate is an integer and positive
+- `True: Continue`
+- `False: Input: TipRate`
 
-Calculate TipAmount: BillAmount * TipRate/100
-RoundTipAmount: Round TipAmount to the higher Rappen
+- Calculate TipAmount: `BillAmount * TipRate/100`
+- RoundTipAmount: `Round TipAmount to the higher Rappen`
 
-Calculate TotalAmount: BillAmount + RoundTipAmount
+- Calculate TotalAmount: `BillAmount + RoundTipAmount`
 
-Display: RoundTipAmount
-Display: TotalAmount
+- `Display: RoundTipAmount`
+- `Display: TotalAmount`
 
