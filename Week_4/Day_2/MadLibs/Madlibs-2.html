@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad Libs</title>
+</head>
+<body>
+    <h1>Mad Libs</h1>
+    
+    <script>
+        let InputNoun = "";
+        let InputVerb = "";
+        let InputAdverb = "";
+        let InputAdjective = "";
+
+        InputNoun = prompt("Please enter a Noun: ");
+        InputVerb = prompt("Please enter a verb: ");
+        InputAdverb = prompt("Please enter an adverb: ");
+        InputAdjective = prompt("Please enter an adjective: ");
+
+        let Story = `The ${InputAdjective} dog eagerly chased the bouncing ball. The curious ${InputNoun} quietly explored the mysterious forest. The energetic child ${InputAdverb} danced in the sunny park. The wise owl silently ${InputVerb} the peaceful night.`;
+
+        document.write(`<p>${Story}</p>`);
+    </script>
+</body>
+</html>
