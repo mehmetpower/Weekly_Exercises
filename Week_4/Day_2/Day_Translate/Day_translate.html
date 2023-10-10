@@ -5,7 +5,6 @@
 </head>
 <body>
     <h1>Day Translator</h1>
-    
     <script>
         let userInputDay = prompt("Please enter a day: ");
         let dayLower = userInputDay.toLowerCase()
@@ -15,29 +14,38 @@
         switch(dayLower) {
           case "sunday":
             dayFrancais = "dimanche";
+            console.log("dimanche")
             break;
-          case "monday":
+          case "monday": 
             dayFrancais = "lundi";
+            console.log("mardi")
             break;
           case "tuesday":
             dayFrancais = "mardi";
+            console.log("mardi")
             break;
           case "wednesday":
             dayFrancais = "mercredi";
+            console.log("mercredi")
             break;
           case "thursday":
             dayFrancais = "jeudi";
+            console.log("jeudi")
             break;
           case "friday":
             dayFrancais = "vendredi";
+            console.log("vendredi")
             break;
           case "saturday":
             dayFrancais = "samedi";
+            console.log("samedi")
             break;
+          default:
+          dayFrancais = "nothing";
+          console.log("nothing")
         }
 
-
-        message = `The day ${dayLower} means ${dayFrancais} in french.`;
+        message = `The day <b style="color:red; font-size: 1.2rem;">"${dayLower}"</b> means <b  style="color:blue; font-size: 1.2rem;">"${dayFrancais}"</b> in french.`;
         document.write(`<p>${message}</p>`);
     </script>
 </body>

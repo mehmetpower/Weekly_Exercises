@@ -7,38 +7,16 @@
     <h1>Test</h1>
     
     <script>
-        let userInputDay = prompt("Please enter a day: ");
-        let dayLower = userInputDay.toLowerCase()
-        let dayFrancais
-        let message
-        
-        switch(userInputDay) {
-          case "sunday":
-            dayFrancais = "dimanche";
-            break;
-          case "monday":
-            dayFrancais = "lundi";
-            break;
-          case "tuesday":
-            dayFrancais = "mardi";
-            break;
-          case "wednesday":
-            dayFrancais = "mercredi";
-            break;
-          case "thursday":
-            dayFrancais = "jeudi";
-            break;
-          case "friday":
-            dayFrancais = "vendredi";
-            break;
-          case "saturday":
-            dayFrancais = "samedi";
-            break;
-        }
+        let person = {
+            name: "John",
+            age: 30,
+            greet: function() {
+              return  "Hello, my name is " + this.name + " and I am " + this.age + " years old.";
+            }
+        };
 
-
-        message = `The day ${userInputDay} means ${dayFrancais} in french`;
-        document.write(`<p>${message}</p>`);
+        let message = person.greet(); // Call the method
+        document.write(`<p>${person.greet()}</p>`);
     </script>
 </body>
 </html>

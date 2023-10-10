@@ -1,18 +1,18 @@
-let InputAuthor
-let LowerAuthor
-let InputQuote
+let inputAuthor
+let inputQuote
+let lowerAuthor
+let author
 
-InputAuthor = prompt("Please enter the Author: ");
-InputQuote = prompt("Please enter the Quote: ");
+inputAuthor = prompt("Please enter the Author: ");
+inputQuote = prompt("Please enter the Quote: ");
 
-LowerAuthor = InputAuthor.toLowerCase();
+lowerAuthor = inputAuthor.toLowerCase();
 
-
-
-if (LowerAuthor === "anonymous" || LowerAuthor === "unknown" || LowerAuthor === "") {
-  Message = "No one knows who said " + InputQuote;
+if (lowerAuthor === "anonymous" || lowerAuthor === "unknown" || lowerAuthor === "") {
+  let message = "No one knows who said " + inputQuote;
 } else {
-  Message = InputAuthor + " says " + InputQuote;
-}
+  let author = lowerAuthor.charAt(0).toUpperCase() + lowerAuthor.slice(1);
+  let message = author + " says " + "\"" + inputQuote + "\""  + ".";
+};
 
-console.log(Message);
+console.log(message);

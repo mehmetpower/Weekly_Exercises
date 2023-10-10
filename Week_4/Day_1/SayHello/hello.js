@@ -1,5 +1,5 @@
-let Name
-let Greeting
+let name
+let greeting
 Name = prompt("Please enter your name: ");
-Greeting = "Hello " + Name
-console.log(Greeting)
+greeting = "Hello " + Name
+console.log(greeting)
