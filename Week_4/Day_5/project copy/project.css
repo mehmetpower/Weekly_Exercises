@@ -1,0 +1,101 @@
+/* BEST PRACTICE from here */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* BEST PRACTICE to here */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+}
+
+header {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  background-color: cadetblue;
+}
+
+
+main {
+  margin: 20px 10% 20px 10%;
+  height: 80%;
+  vertical-align: baseline;
+  flex-grow: 1 ;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+li {
+  cursor: pointer;
+  list-style-type: none;
+  border: 3px solid blue;
+  border-radius: 10px;
+  width: 300px;
+  height: 600px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+li:hover {
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+li[data-student-from="Lausanne"]:hover {
+  background-color: #f14c4c;
+  color: rgb(219, 209, 13);
+}
+
+li[data-student-from="Bern"]:hover {
+  background-color: #0026ff;
+  color: white;
+}
+
+li[data-student-from="Zurich"]:hover {
+  background-color: #ff00d4;
+  color: rgb(155, 232, 238);
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  height: 325px;
+  display: block;
+  margin: 5px auto;
+}
+
+li p {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: burlywood;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+
+
+
