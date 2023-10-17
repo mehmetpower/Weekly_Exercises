@@ -1,0 +1,24 @@
+inputs:
+let currentYear;
+let currentAge;
+let desiredAge;
+
+Process:
+  prompt currentAge
+  prompt desiredAge
+  let yearsLeft = desiredAge - currentAge
+  let retirementYear = currentYear + yearsLeft
+
+
+output:
+let yearsLeft;
+let retirementYear;
+
+Edge & Corner Cases:
+1. currentAge and desiredAge:
+  Nan
+  negative number
+  not integer
+  null
+
+2. desiredAge < currentAge

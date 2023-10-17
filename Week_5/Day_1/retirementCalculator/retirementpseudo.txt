@@ -1,0 +1,38 @@
+inputs:
+let currentYear;
+let currentAge;
+let desiredAge;
+
+Process:
+function retirement(currentAge, desiredAge){
+  prompt currentAge
+  while currentAge in the corner case{
+    prompt currentAge
+  }
+  prompt desiredAge
+  while desiredAge in the corner case{
+    prompt desiredAge
+  }
+  let yearsLeft = desiredAge - currentAge
+  let retirementYear = currentYear + yearsLeft
+
+  if yearsLeft = 0
+  return `you will retire at the year 'retirementYear' and you still have 'yearsLeft' year for retirement.
+  else if yearsLeft = 0
+  return `you will retire this year at the age of desiredAge.
+  else
+  return `you will retire at the year 'retirementYear' and you still have 'yearsLeft' years for retirement.
+}
+
+output:
+let yearsLeft;
+let retirementYear
+
+Edge & Corner Cases:
+1. currentAge and desiredAge:
+  Nan
+  negative number
+  not integer
+  null
+
+2. desiredAge < currentAge
