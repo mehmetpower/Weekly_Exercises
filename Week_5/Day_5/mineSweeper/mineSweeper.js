@@ -1,7 +1,7 @@
 
 // Set this constant to true to debug the placement of bombs without
 // having to click on all cells to reveal them.
-var CHEAT_REVEAL_ALL = false;
+var CHEAT_REVEAL_ALL = true;
 
 const ROWS_COUNT = 10;
 const COLS_COUNT = 10;
