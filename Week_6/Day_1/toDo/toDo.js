@@ -46,8 +46,8 @@ function sortList() {
   const liList = Array.from(ul.getElementsByTagName("li"));
 
   liList.sort(function (a, b) {
-    const textA = a.textContent.toLowerCase();
-    const textB = b.textContent.toLowerCase();
+    const textA = a.textContent;
+    const textB = b.textContent;
     if (textA < textB) {
       return -1;
     }
