@@ -25,10 +25,7 @@ function listator() {
   
   let deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete ToDo';
-  deleteButton.addEventListener('click', function () {
-    li.remove();
-  });
-  
+  deleteButton.addEventListener('click', () => li.remove());
   li.appendChild(deleteButton);
   ul.appendChild(li);
 }
