@@ -1,0 +1,56 @@
+[
+    {
+    "companyName" : "Exoscale",
+    "Location" : ["Lausanne"],
+    "ITdepartment" :  ["IT support", "System & network management"],
+    "N.of internship" : "2"
+    },
+    {
+    "companyName" : "Group E",
+    "Location" : ["Fribourg", "Neuchâtel"],
+    "ITdepartment" : ["Microsoft Power Platform"],
+    "N.of internship" : "1"
+    },
+    {
+    "companyName" : "Loyco SA",
+    "Location" : ["Geneve"],
+    "ITdepartment" : ["Software/Application Development"],
+    "N.of internship" : "1"
+    },
+    {
+    "companyName" : "Nestle",
+    "Location" : ["Orbe"],
+    "ITdepartment" : ["Microsoft Power Platform", "IT Legal, Risk & Compliance", "IT Workforce 360"],
+    "N.of internship" : "2"
+    },
+    {
+    "companyName" : "phenomX",
+    "Location" : ["Geneve", "Lausanne"],
+    "ITdepartment" : ["Web Design", "Digital Marketing", "Software/Application Development", "Machine Learning", "Data Science"],
+    "N.of internship" : "1"
+    },
+    {
+    "companyName" : "SLM",
+    "Location" : ["Nyon"],
+    "ITdepartment" : ["Web Design", "Digital Marketing", "Software/Application Development", "Web Development"],
+    "N.of internship" : "1"
+    },
+    {
+    "companyName" : "EFG Bank",
+    "Location" : ["Geneve", "Lausanne"],
+    "ITdepartment" : ["IT service managment"],
+    "N.of internship" : "2"
+    },
+    {
+    "companyName" : "RALPH LAUREN",
+    "Location" : ["Geneve", "Remote"],
+    "ITdepartment" : ["Data Analytics", "Business Intelligence"],
+    "N.of internship" : "1"
+    },
+    {
+    "companyName" : "WSP-BG",
+    "Location" : ["Lausanne"],
+    "ITdepartment" : ["Software/Application Development", "Data Analytics", "Business Intelligence", "Machine Learning", "Data Science","Microsoft Power Platform"],
+    "N.of internship" : "2"
+    }
+]

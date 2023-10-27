@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-size: 300;
+}
+/* powercoders red*/
+h1{
+    font-family: 'Lora', serif;
+    font-size: 500;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+    padding: 0.3rem;
+}
+header img{
+    width:30%;
+    object-fit: contain;
+}
+table{
+    text-align: center;
+    padding: 10px;
+}
+th{
+    background-color:#C32E4C ;
+    color: #ffffff;
+    cursor: pointer;
+}
+td{
+    padding: 10px;
+}
+.hidden{
+    display: none;
+}
