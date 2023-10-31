@@ -10,12 +10,12 @@ const windSpeed = document.getElementById('windspeed_10m');
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
-        rain.textContent = data.current.rain + ' mm.';
-        temperature.innerHTML = data.current.temperature_2m + ' &deg;C';
+        rain.textContent = data.current.rain + ' ' + data.current_units.rain;
+        temperature.innerHTML = data.current.temperature_2m + ' ' + data.current_units.temperature_2m;
         time.textContent = formatTime(data.current.time);
-        humidity.textContent = data.current.relativehumidity_2m + '%';
-        pressure.textContent = data.current.surface_pressure + ' hPa';
-        windSpeed.textContent = data.current.windspeed_10m + ' km/h';
+        humidity.textContent = data.current.relativehumidity_2m + ' ' + data.current_units.relativehumidity_2m;
+        pressure.textContent = data.current.surface_pressure + ' ' + data.current_units.surface_pressure;
+        windSpeed.textContent = data.current.windspeed_10m + ' ' + data.current_units.windspeed_10m;
     })
     .catch(error => {
         console.log('Error fetching weather data:', error);
