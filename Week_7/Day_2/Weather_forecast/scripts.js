@@ -3,7 +3,7 @@ const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=
 const weatherInfo = document.getElementById('weather-info');
 const rain = document.getElementById('rain');
 const temperature_2m = document.getElementById('temperature_2m');
-const time = document.getElementById('time'); // Changed the variable name to 'time' for consistency
+const time = document.getElementById('time');
 
 fetch(apiUrl)
     .then(response => response.json())
@@ -11,7 +11,6 @@ fetch(apiUrl)
         rain.textContent = data.current.rain;
         temperature_2m.textContent = data.current.temperature_2m;
 
-        // Format the time
         const apiTime = data.current.time;
         const formattedTime = formatTime(apiTime);
         time.textContent = `${formattedTime}`;
