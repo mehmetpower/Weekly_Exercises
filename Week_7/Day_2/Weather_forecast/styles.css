@@ -50,3 +50,26 @@ div p:nth-child(2){
   font-weight: 200;
   color: rgb(203, 211, 231);
 }
+
+@media only screen and (max-width: 910px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  main{
+    grid-template-columns: 1fr;
+  }
+  
+  section:first-child{
+    border: 0;
+    border-bottom: 1px solid #fff;
+  }
+}
