@@ -21,6 +21,11 @@ main{
   align-items: center;
 }
 
+h2{
+  font-weight: 200;
+  margin: 0;
+}
+
 section:first-child{
   border-right: 1px solid #fff;
 }
@@ -67,7 +72,7 @@ div p:nth-child(2){
   main{
     grid-template-columns: 1fr;
   }
-  
+
   section:first-child{
     border: 0;
     border-bottom: 1px solid #fff;
