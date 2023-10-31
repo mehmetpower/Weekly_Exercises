@@ -1,20 +1,33 @@
-const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,rain';
+const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,relativehumidity_2m,rain,surface_pressure,windspeed_10m,winddirection_10m';
 
-        const weatherInfo = document.getElementById('weather-info');
-        const rain = document.getElementById('rain');
-        const temperature = document.getElementById('temperature_2m');
-        const humidity = document.getElementById('time');
-        const backgroundImage = document.getElementById('background-image');
+const rain = document.getElementById('rain');
+const temperature = document.getElementById('temperature_2m');
+const time = document.getElementById('time');
+const humidity = document.getElementById('relativehumidity_2m');
+const pressure = document.getElementById('surface_pressure');
+const windSpeed = document.getElementById('windspeed_10m');
 
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        rain.textContent = data.current.rain + ' mm.';
+        temperature.innerHTML = data.current.temperature_2m + ' &deg;C';
+        time.textContent = formatTime(data.current.time);
+        humidity.textContent = data.current.relativehumidity_2m + '%';
+        pressure.textContent = data.current.surface_pressure + ' hPa';
+        windSpeed.textContent = data.current.windspeed_10m + ' km/h';
+    })
+    .catch(error => {
+        console.log('Error fetching weather data:', error);
+    });
 
-                rain.textContent = data.current.rain;
-                temperature_2m.textContent = data.current.temperature_2m;
-                time.textContent = data.current.time;
-            })
-            .catch(error => {
-                console.error('Error fetching weather data:', error);
-                weatherInfo.innerHTML = 'Weather data not available';
-            });
+function formatTime(apiTime) {
+    const date = new Date(apiTime);
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+
+    return `${day}-${month}-${year} ${hours}:${minutes}`;
+}

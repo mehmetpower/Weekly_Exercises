@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="weather-container">
-        <h1>Weather Forecast</h1>
-        <div id="weather-info">
-            <h2>Weather Data :)</h2>
-            <p>rain: <span id="rain"></span>mm.</p>
-            <p>temperature_2m: <span id="temperature_2m"></span>&deg;C</p>
-            <p>time: <span id="time"></span></p>
-        </div>
-    </div>
-    
-    <script src="scripts.js">
-        
-    </script>
+    <h1>CURRENT WEATHER</h1>
+    <main>
+        <section>
+            <p id="temperature_2m"></p>
+            <p id="time"></p>
+        </section>
+        <section>
+            <div>
+                <p>Rain</p>
+                <p id="rain"></p>
+            </div>
+            <div>
+                <p>Humidity</p>
+                <p id="relativehumidity_2m"></p>
+            </div>
+            <div>
+                <p>Surface pressure</p>
+                <p id="surface_pressure"></p>
+            </div>
+            <div>
+                <p>Wind speed</p>
+                <p id="windspeed_10m"></p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>
