@@ -1,6 +1,4 @@
 const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=46.52&longitude=6.64&current=temperature_2m,relativehumidity_2m,rain,surface_pressure,windspeed_10m,winddirection_10m';
-const geoApi = 'https://api.api-ninjas.com/v1/reversegeocoding?lat=46.52&lon=6.64';
-
 
 const rain = document.getElementById('rain');
 const temperature = document.getElementById('temperature_2m');
@@ -8,10 +6,6 @@ const time = document.getElementById('time');
 const humidity = document.getElementById('relativehumidity_2m');
 const pressure = document.getElementById('surface_pressure');
 const windSpeed = document.getElementById('windspeed_10m');
-
-fetch(geoApi)
-.then(response => response.json())
-.then(data => console.log(data))
 
 fetch(apiUrl)
     .then(response => response.json())
